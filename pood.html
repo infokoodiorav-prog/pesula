@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KülaPesula</title>
+    <link rel="stylesheet" href="css/pood.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="ulemine">
+      <div class="nupud">
+        <a href="index.html" id="avaleht">🏠 Avalehele</a>
+        <a href="teenused.html" id="teenused">🛠️ Teenused</a>
+      </div>
+
+
+      <div class="ostukorv">
+        <input type="text" id="toode" placeholder="Otsi toodet" />
+        <img src="img/logo.png" alt="Logo" width="50px" height="30px" />
+        <div id="toote-list" class="autocomplete-items"></div>
+        <span id="toodekorvis">🛒 0</span>
+
+        <div id="ostukorvContainer">
+          <ul id="ostukorvList"></ul>
+          <p id="ostukorvSumma">Kokku: 0€</p>
+        </div>
+      </div>
+</div>
+      <div class="kategooriad">
+        <button data-kateg="kõik">Kõik</button>
+        <button data-kateg="keemia">Autokeemia</button>
+        <button data-kateg="vaha">Vahad</button>
+        <button data-kateg="tarvikud">Tarvikud</button>
+      </div>
+
+      <div class="tooted-grid" id="tootedGrid"></div>
+
+      <div class="popup" id="tootePopup">
+        <div class="popup-content">
+          <span class="sulgePopup" id="sulgePopup">&times;</span>
+          <img id="popupPilt" src="" alt="Toote pilt" />
+          <h2 id="popupNimi"></h2>
+          <p id="popupKirjeldus"></p>
+          <p id="popupHindLabel">Hind: <span id="popupHind"></span>€</p>
+          <label id="popupKogusLabel">Kogus: <input type="number" id="popupKogus" value="1" min="1"/></label>
+          <button id="lisaKorviBtn">Lisa ostukorvi</button>
+        </div>
+      </div>
+
+      <div id="telliPopup" class="popup">
+        <div class="popup-content">
+          <span id="sulgeTelliPopup">&times;</span>
+          <h2>Tellimuse Info</h2>
+          <form id="telliForm">
+            <label>Nimi: <input type="text" required /></label>
+            <label>E-mail: <input type="email" required /></label>
+            <label>Aadress: <input type="text" required /></label>
+            <button type="submit" id="saadaBroneering">Esita tellimus</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+        <hr class="joon">
+        <p id="oigus">© 2025 KülaPesula Kõik õigused kaitstud.</p>
+        <p id="teine">Veebilahendus: KoodiOrav</p>
+    </footer>
+    <script src="js/pood.js"></script>
+  </body>
+</html>

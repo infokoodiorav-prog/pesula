@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="et">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KülaPesula</title>
+    <link rel="stylesheet" href="css/broneering.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="nupud">
+        <a href="index.html">🏠 Avalehele</a>
+        <a href="pood.html">🛒 E-pood</a>
+      </div>
+<hr class="joon">
+      <form action="#" method="POST">
+        <input type="text" name="nimi" placeholder="Nimi" />
+        <input type="email" name="email" placeholder="E-mail" />
+        <input type="tel" name="telefon" placeholder="Telefon" />
+        <input type="text" id="auto" placeholder="Automark" />
+        <div id="auto-list" class="autocomplete-items"></div>
+
+        <select name="teenus" id="teenus">
+          <option disabled selected>Vali teenus</option>
+          <option value="Välipesu">Välipesu</option>
+          <option value="Sisepuhastus">Sisepuhastus</option>
+          <option value="Komplektpesu">Komplektpesu</option>
+          <option value="Keemiline">Keemiline puhastus</option>
+          <option value="Vahatamine">Vahatamine</option>
+          <option value="Läigestamine">Läigestamine</option>
+          <option value="Poleerimine">Poleerimine</option>
+        </select>
+
+        <button id="valiAegBtn" type="button" class="avamine">
+          Vali aeg ja kuupäev
+        </button>
+        <input
+          type="text"
+          id="valitudKuupaev"
+          name="kuupaev"
+          placeholder="Kuupäev"
+          readonly
+        />
+        <input
+          type="text"
+          id="valitudAeg"
+          name="aeg"
+          placeholder="Aeg"
+          readonly
+        />
+
+        <button type="submit" id="saadaBroneering">Saada broneering</button>
+      </form>
+
+  
+      <div id="popup" class="popup">
+        <div class="popup-container">
+          <input type="date" id="kalender" />
+
+          <div class="aegade-list"></div>
+
+          <button id="sulgePopup">Sulge</button>
+        </div>
+      </div>
+    </div>
+<div id="sonum" class="hidden">Broneering saadetud!</div>
+    <hr class="joon">
+
+    <footer>
+        <p id="oigus">© 2025 KülaPesula Kõik õigused kaitstud.</p>
+        <p id="teine">Veebilahendus: KoodiOrav</p>
+        </footer>
+    <script src="js/broneering.js"></script>
+  </body>
+</html>

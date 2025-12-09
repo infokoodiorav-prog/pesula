@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  font-family: "Montserrat" Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+ background-image: url("../img/taust.png");
+  background-position: center;
+  background-size: cover;
+  
+}
+.keeled .pilt {
+  height: 50px;
+  width: 60px;
+  z-index: 1000;
+  text-shadow: 5, 5, 5;
+  border-radius: 50%;
+}
+.vid {
+  filter: brightness(0.55) contrast(1.1) blur(1px);
+}
+
+#detach-button-host {
+  display: none;
+}
+.logo video {
+  width: 100%;
+  height: auto;
+}
+.logo {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+}
+.keeled button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  padding: 5px 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.856);
+  color: whitesmoke;
+  text-decoration: none;
+}
+.keeled button:hover {
+  color: beige;
+}
+.keeled {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  display: flex;
+  margin: 10px 10px;
+  text-align: center;
+  position: absolute;
+}
+.intro {
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin: 20px auto;
+  width: 90%;
+  font-size: 14px;
+}
+.joon {
+  max-width: 600px;
+  margin: 20px auto;
+  width: 90%;
+  border: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 5px;
+  border-radius: 30px;
+}
+.vaartus {
+  max-width: 600px;
+  text-align: center;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 30px 30px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  margin: 20px auto;
+  width: 90%;
+}
+.vaartus h2 {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.vaartus p {
+  margin-bottom: 10px;
+}
+.vaartus ul {
+  list-style-type: none;
+}
+.vaartus li {
+  margin: 5px 5px;
+}
+.cta {
+  border-radius: 15px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  margin: 20px auto;
+  color: whitesmoke;
+}
+.cta-nupud {
+  justify-content: center;
+  display: flex;
+  gap: 50px;
+}
+.cta-nupud a {
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 5px 5px;
+  background-color: rgba(0, 0, 0, 0.856);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.cta-nupud a:hover {
+  color: beige;
+}
+.e-pood {
+  border-radius: 15px;
+  max-width: 600px;
+  text-align: center;
+  font-size: 14px;
+  padding: 20px 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 90%;
+  margin: 20px auto;
+  color: whitesmoke;
+}
+#e-pood {
+  margin-bottom: 15px;
+}
+
+.e-pood a {
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 5px 5px;
+  background-color: rgba(0, 0, 0, 0.856);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.e-pood a:hover {
+  color: beige;
+}
+.kontakt {
+  justify-content: center;
+  font-size: 15px;
+  color: whitesmoke;
+  display: flex;
+  gap: 20px;
+}
+.kontakt p {
+  padding: 5px 5px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.avatud {
+  justify-self: center;
+  max-width: 600px;
+  text-align: center;
+  color: whitesmoke;
+}
+.avatud table {
+  padding: 20px 20px;
+  border-radius: 15px;
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  margin-top: 20px;
+}
+.riik {
+  color: red;
+  font-size: 14px;
+}
+
+#leiad {
+  justify-self: center;
+  max-width: 600px;
+  color: whitesmoke;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.sots {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 200px;
+  margin: 0 auto;
+  gap: 10px;
+}
+.sots img {
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.856);
+  width: 30px;
+  height: 30px;
+}
+footer {
+  text-align: center;
+  font-size: 12px;
+  color: rgba(17, 17, 17, 0.429);
+}
+@media(min-width:768px) {
+  .logo .vid{
+    width:80%;
+    height: 400px;
+    
+  }
+}
