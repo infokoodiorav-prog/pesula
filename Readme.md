@@ -1,5 +1,7 @@
 # [KülaPesula]  
 
+KülaPesula is a fictional project created for portfolio/demo purposes.
+
 This is a multi-page front-end project demonstrating a multilingual e-commerce and booking system. It is built as a demo to showcase interactive elements, responsive design, and user interface functionality.
 
 ## Project Overview
